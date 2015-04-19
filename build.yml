@@ -1,0 +1,27 @@
+sdkversion: "5.0.0"
+name: "ezi1"
+version: "1.0"
+vendor: "rhomobile"
+build: "debug"
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator8.0"
+  provisionprofile: 
+  codesignidentity: "iPhone Developer"
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.ezi1"
+  BundleURLScheme: "ezi1"
+  production:
+    ipa_itunesartwork_image: "./production/iTunesArtwork.png"
+wp8:
+  productid: "e1847700-c8b3-0132-b3e5-64115be6a40b"
+android:
+  manifest_template: "AndroidManifest.erb"
+  version: "2.3.3"
+  logcatFilter: "APP:I StrictMode:I DEBUG:I *:E"
+wm: 
+extensions:
+  - rhoconnect-client
+app_type: "rhoelements"
+capabilities: 
